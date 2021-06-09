@@ -10,10 +10,12 @@ import HomePage from './components/Pages/Home';
 
 function App() {
   return (
-    <div className="text-center text-white min-vh-100 container-fluid bg-secondary">
-      Flux Music
+    <div className="text-white">
       <Router>
         <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
           <Route exact path="/Login">
             <Login />
           </Route>

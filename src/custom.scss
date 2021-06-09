@@ -1,9 +1,11 @@
 $theme-colors: (
-  "primary": #432874,
-  "secondary": #59369A,
-  "dark": #212629,
-  "danger": #ff4136
+  'primary': #432874,
+  'secondary': #59369a,
+  'dark': #212629,
+  'danger': #ff4136,
 );
+
+$border-radius: 15px;
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
