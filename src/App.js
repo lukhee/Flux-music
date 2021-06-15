@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { NavBar } from './components/Widgets';
 import {
   Login,
   Logout,
@@ -10,22 +11,23 @@ import HomePage from './components/Pages/Home';
 
 function App() {
   return (
-    <div className="text-white">
+    <div className="text-dark">
+      {/* <NavBar /> */}
       <Router>
         <Switch>
           <Route exact path="/">
             <HomePage />
           </Route>
-          <Route exact path="/Login">
+          <Route exact path="/login">
             <Login />
           </Route>
-          <Route exact path="/Logout">
+          <Route exact path="/logout">
             <Logout />
           </Route>
-          <Route exact path="/Register">
+          <Route exact path="/register">
             <Register />
           </Route>
-          <Route exact path="/ForgetPassword">
+          <Route exact path="/forget_password">
             <ForgetPassword />
           </Route>
           <Route exact path="/HomePage">
