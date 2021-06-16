@@ -5,3 +5,10 @@ export const getAccessToken = () => {
 export const verifyToken = () => {
   return localStorage.getItem(process.env.refreshToken);
 };
+
+export const findObjectByKey = (array = {}, key) => {
+  if (key in array === true) {
+    return array[key];
+  }
+  return;
+};

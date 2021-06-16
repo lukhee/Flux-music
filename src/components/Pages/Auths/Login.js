@@ -21,17 +21,20 @@ const Login = () => {
   let history = useHistory();
   const [activeButton] = useState(1);
   const [loading, setLoading] = useState(false);
-  const [formData, setFormData] = useState({
+  const [formData] = useState({
     email: '',
     password: '',
   });
 
   const handleSubmit = (event, value) => {
     setLoading(true);
-    const data = {
-      email: value.email.trim(),
-      password: value.password.trim(),
-    };
+    // Todo: get the formData
+    // Todo: Call the dispatch
+    // Todo: set loading to true and disabbled button
+    // const data = {
+    //   email: value.email.trim(),
+    //   password: value.password.trim(),
+    // };
   };
 
   const routingHandler = (path = 'login') => {

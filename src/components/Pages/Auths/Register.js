@@ -9,7 +9,6 @@ import {
   Col,
   FormGroup,
   Label,
-  Input,
 } from 'reactstrap';
 // availity-reactstrap-validation
 import { AvForm, AvField } from 'availity-reactstrap-validation';
@@ -30,11 +29,13 @@ const Register = () => {
 
   const handleSubmit = (event, value) => {
     setLoading(true);
-    console.log(value);
-    const data = {
-      email: value.email.trim(),
-      password: value.password.trim(),
-    };
+    // Todo: set form data
+    // const data = {
+    //   email: value.email.trim(),
+    //   password: value.password.trim(),
+    // };
+    // Todo: Call the dispatch
+    // Todo: Set sumit button to disabled
   };
 
   const routeHandler = (path = 'login') => {
@@ -169,7 +170,7 @@ const Register = () => {
                               type="select"
                               className="form-control"
                               id="gender"
-                              placeholder='gender here '
+                              placeholder="gender here "
                             >
                               <option value="male">Male</option>
                               <option value="female">Female</option>
